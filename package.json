@@ -7,7 +7,7 @@
     "dev": "concurrently -k \"npm run server\" \"npm run client\"",
     "client": "vite --host 0.0.0.0 --port 5173",
     "server": "PORT=3001 node server/server.js",
-    "build": "vite build",
+    "build": "vite build && rm -rf server/build && mkdir -p server/build && cp -R dist/. server/build && echo && echo '--- server directory ---' && ls -la server && echo && echo '--- server/build ---' && ls -la server/build",
     "start": "node server/server.js",
     "report": "node scripts/patient-report.js"
   },

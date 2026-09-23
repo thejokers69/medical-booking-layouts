@@ -8,7 +8,8 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const dataDir = path.join(__dirname, 'data')
 const dbPath = path.join(dataDir, 'db.json')
-const distDir = path.join(__dirname, '..', 'dist')
+const serverBuildDir = path.join(__dirname, 'build')
+const distDir = fs.existsSync(serverBuildDir) ? serverBuildDir : path.join(__dirname, '..', 'dist')
 
 const emptyDb = () => ({
   users: [],

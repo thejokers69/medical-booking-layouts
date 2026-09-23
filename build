@@ -2,14 +2,31 @@ $ npm run build
 
 
 > stayhealthy@1.0.0 build
-> vite build
+> vite build && rm -rf server/build && mkdir -p server/build && cp -R dist/. server/build && echo && echo '--- server directory ---' && ls -la server && echo && echo '--- server/build ---' && ls -la server/build
 
 vite v5.4.21 building for production...
 transforming...
 ✓ 49 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                   2.11 kB │ gzip:  0.84 kB
-dist/assets/index-haL_u-HI.css    5.95 kB │ gzip:  1.98 kB
-dist/assets/index-Bid5heIT.js   187.22 kB │ gzip: 58.95 kB
-✓ built in 325ms
+dist/index.html                   2.11 kB │ gzip:  0.83 kB
+dist/assets/index-DaedUoCF.css    6.31 kB │ gzip:  2.04 kB
+dist/assets/index-QaUS_6nQ.js   186.92 kB │ gzip: 58.97 kB
+✓ built in 368ms
+
+--- server directory ---
+total 16
+drwxr-xr-x@  5 thejokers69ml  staff   160 Sep 23 12:13 .
+drwxr-xr-x@ 30 thejokers69ml  staff   960 Sep 23 12:13 ..
+drwxr-xr-x@  6 thejokers69ml  staff   192 Sep 23 12:13 build
+drwxr-xr-x@  3 thejokers69ml  staff    96 Sep 23 11:26 data
+-rw-r--r--@  1 thejokers69ml  staff  6339 Sep 23 12:13 server.js
+
+--- server/build ---
+total 24
+drwxr-xr-x@ 6 thejokers69ml  staff   192 Sep 23 12:13 .
+drwxr-xr-x@ 5 thejokers69ml  staff   160 Sep 23 12:13 ..
+drwxr-xr-x@ 4 thejokers69ml  staff   128 Sep 23 12:13 assets
+-rw-r--r--@ 1 thejokers69ml  staff   177 Sep 23 12:13 favicon.svg
+-rw-r--r--@ 1 thejokers69ml  staff  2109 Sep 23 12:13 index.html
+-rw-r--r--@ 1 thejokers69ml  staff  2488 Sep 23 12:13 patient_report.pdf
