@@ -6,7 +6,7 @@ Medical Appointment Booking is the StayHealthy front-end capstone. StayHealthy i
 
 This repository contains the static layout pages and the React application used for the final project, plus setup instructions.
 
-Live site: https://medical-booking-layouts.vercel.app/
+Live site: <https://medical-booking-layouts.vercel.app/>
 
 ## What you can do in the app
 
@@ -27,8 +27,8 @@ npm run report
 npm run dev
 ```
 
-- App: http://localhost:5173
-- API: http://localhost:3001
+- App: <http://localhost:5173>
+- API: <http://localhost:3001>
 
 Production build and server:
 
@@ -77,4 +77,4 @@ The first HTML screens still open on their own:
 python3 -m http.server 8080
 ```
 
-Home: http://localhost:8080/Landing_Page/LandingPage.html
+Home: <http://localhost:8080/Landing_Page/LandingPage.html>
