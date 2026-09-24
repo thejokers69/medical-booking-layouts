@@ -225,3 +225,4 @@ node_modules/
 .env
 .vercel
 server/data/
+-l
